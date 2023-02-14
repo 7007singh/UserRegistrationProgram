@@ -16,6 +16,13 @@ namespace UserRegistrationProblem
             string inputs = Console.ReadLine();
             ValidatePattern(inputs, pattern);
         }
+        public static void ValidateLasttName()
+        {
+            Console.WriteLine("First Name: ");
+            string pattern = "^[A-Z]{1,}[a-z]{2,}";
+            string inputs = Console.ReadLine();
+            ValidatePattern(inputs, pattern);
+        }
         public static void ValidatePattern(string inputs, string pattern)
         {
             if (Regex.IsMatch(inputs, pattern))
