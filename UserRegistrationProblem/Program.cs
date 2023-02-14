@@ -11,6 +11,8 @@ namespace UserRegistrationProblem
         static void Main(string[] args)
         {
             Console.WriteLine("___Welcome to User Registration program---");
+            ValidateRegistration.ValidateFirstName();
+            Console.ReadLine();
         }
     }
 }
