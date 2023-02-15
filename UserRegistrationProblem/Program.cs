@@ -11,9 +11,10 @@ namespace UserRegistrationProblem
         static void Main(string[] args)
         {
             Console.WriteLine("___Welcome to User Registration program---");
-            ValidateRegistration.ValidateFirstName();
-            ValidateRegistration.ValidateLasttName();
-            ValidateRegistration.ValidateEmailId();
+            //ValidateRegistration.ValidateFirstName();
+            //ValidateRegistration.ValidateLasttName();
+            //ValidateRegistration.ValidateEmailId();
+            ValidateRegistration.ValidateMobileFormat();
             Console.ReadLine();
         }
     }

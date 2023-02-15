@@ -30,6 +30,13 @@ namespace UserRegistrationProblem
             string inputs = Console.ReadLine();
             ValidatePattern(inputs, pattern);
         }
+        public static void ValidateMobileFormat()
+        {
+            Console.WriteLine("Mobile Number: ");
+            string pattern = "[0-9]{2}[ ]?[0-9]{10}";
+            string inputs = Console.ReadLine();
+            ValidatePattern(inputs, pattern);
+        }
         public static void ValidatePattern(string inputs, string pattern)
         {
             if (Regex.IsMatch(inputs, pattern))
