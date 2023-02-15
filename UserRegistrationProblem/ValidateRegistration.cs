@@ -37,6 +37,13 @@ namespace UserRegistrationProblem
             string inputs = Console.ReadLine();
             ValidatePattern(inputs, pattern);
         }
+        public static void ValidatePassword()
+        {
+            Console.WriteLine("Password: ");
+            string pattern = "([a-zA-Z0-9]){8,}";
+            string inputs = Console.ReadLine();
+            ValidatePattern(inputs, pattern);
+        }
         public static void ValidatePattern(string inputs, string pattern)
         {
             if (Regex.IsMatch(inputs, pattern))
