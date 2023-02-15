@@ -13,6 +13,7 @@ namespace UserRegistrationProblem
             Console.WriteLine("___Welcome to User Registration program---");
             ValidateRegistration.ValidateFirstName();
             ValidateRegistration.ValidateLasttName();
+            ValidateRegistration.ValidateEmailId();
             Console.ReadLine();
         }
     }
