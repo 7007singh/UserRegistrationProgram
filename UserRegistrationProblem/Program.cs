@@ -10,14 +10,6 @@ namespace UserRegistrationProblem
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-            Console.WriteLine("___Welcome to User Registration program---");
-            ValidateRegistration.ValidateFirstName();
-            ValidateRegistration.ValidateLasttName();
-            ValidateRegistration.ValidateEmailId();
-            ValidateRegistration.ValidateMobileFormat();
-            ValidateRegistration.ValidatePassword();
-=======
             Console.WriteLine("___Welcome to User Registration program___");
             Console.WriteLine("Choose the prigram to validate\n1.Validate first name\n2.Validate second name\n3.Validate email id" +
                 "\n4.Validate mobile number\n5.validate password");
@@ -40,7 +32,6 @@ namespace UserRegistrationProblem
                     ValidateRegistration.ValidatePassword();
                     break;
             }
->>>>>>> UC4-ValidateMobileNumber
             Console.ReadLine();
         }
     }
