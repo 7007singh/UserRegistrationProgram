@@ -40,7 +40,7 @@ namespace UserRegistrationProblem
         public static void ValidatePassword()
         {
             Console.WriteLine("Password: ");
-            string pattern = "(?=.*[A-Z])[a-zA-Z0-9].{8,}$";
+            string pattern = "(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9].{8,}$";
             string inputs = Console.ReadLine();
             ValidatePattern(inputs, pattern);
         }
