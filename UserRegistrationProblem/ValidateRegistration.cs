@@ -33,7 +33,14 @@ namespace UserRegistrationProblem
         public static void ValidateMobileFormat()
         {
             Console.WriteLine("Mobile Number: ");
-            string pattern = "[0-9]{2}[ ]?[0-9]{10}";
+            string pattern = "[0-9]{2}[ ]{1}[0-9]{10}";
+            string inputs = Console.ReadLine();
+            ValidatePattern(inputs, pattern);
+        }
+        public static void ValidatePassword()
+        {
+            Console.WriteLine("Password: ");
+            string pattern = "(?=.*[A-Z])[a-zA-Z0-9].{8,}$";
             string inputs = Console.ReadLine();
             ValidatePattern(inputs, pattern);
         }
