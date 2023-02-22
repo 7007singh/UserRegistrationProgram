@@ -44,6 +44,13 @@ namespace UserRegistrationProblem
             string inputs = Console.ReadLine();
             ValidatePattern(inputs, pattern);
         }
+        public static void ValidateAllEmail()
+        {
+            Console.WriteLine("Validation of input");
+            string pattern = "^[a,b,c]{3}[-.+]*[0-9]*[@]{1}[a-z0-9]*[.][a-z[.]*[a-z]*";
+            string[] inputs = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net","abc.100@abc.com.au","abc@1.com","abc@gmai.com.com","abc+100@gmail.com" };
+            ValidateAllMail(inputs, pattern);
+        }
         public static void ValidatePattern(string inputs, string pattern)
         {
             if (Regex.IsMatch(inputs, pattern))
@@ -53,6 +60,20 @@ namespace UserRegistrationProblem
             else
             {
                 Console.WriteLine("{0} is invalid ", inputs);
+            }
+        }
+        public static void ValidateAllMail(string[] inputs, string pattern)
+        {
+            foreach (string input in inputs)
+            {
+                if (Regex.IsMatch(input, pattern))
+                {
+                    Console.WriteLine("valid: "+ input);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid: "+ input);
+                }
             }
         }
     }
