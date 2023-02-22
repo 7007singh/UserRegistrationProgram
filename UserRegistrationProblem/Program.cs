@@ -12,7 +12,7 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("___Welcome to User Registration program___");
             Console.WriteLine("Choose the prigram to validate\n1.Validate first name\n2.Validate second name\n3.Validate email id" +
-                "\n4.Validate mobile number\n5.validate password");
+                "\n4.Validate mobile number\n5.validate password\n6.Validate all email sample");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -30,6 +30,9 @@ namespace UserRegistrationProblem
                     break;
                 case 5:
                     ValidateRegistration.ValidatePassword();
+                    break;
+                case 6:
+                    ValidateRegistration.ValidateAllEmail();
                     break;
             }
             Console.ReadLine();
