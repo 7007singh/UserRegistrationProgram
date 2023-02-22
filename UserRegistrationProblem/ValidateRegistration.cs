@@ -44,13 +44,6 @@ namespace UserRegistrationProblem
             string inputs = Console.ReadLine();
             ValidatePattern(inputs, pattern);
         }
-        public static void ValidateAllEmail()
-        {
-            Console.WriteLine("Password: ");
-            string pattern = "[a-zA-Z]+[.+-][0-9a-zA-Z]+[@][a-zA-Z]+[.]+[a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
-            string inputs = Console.ReadLine();
-            ValidatePattern(inputs, pattern);
-        }
         public static void ValidatePattern(string inputs, string pattern)
         {
             if (Regex.IsMatch(inputs, pattern))
