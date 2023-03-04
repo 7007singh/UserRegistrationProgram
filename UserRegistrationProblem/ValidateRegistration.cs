@@ -47,8 +47,8 @@ namespace UserRegistrationProblem
         public static void ValidateAllEmail()
         {
             Console.WriteLine("Validation of input");
-            string pattern = "^[a,b,c]{3}[-.+]*[0-9]*[@]{1}[a-z0-9]*[.][a-z[.]*[a-z]*";
-            string[] inputs = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net","abc.100@abc.com.au","abc@1.com","abc@gmai.com.com","abc+100@gmail.com" };
+            string pattern = "^[a,b,c]{3}[-.+]*[0-9]*[@]{1}[a-z0-9]*[.][a-z[.]*[a-z]*[,]*";
+            string[] inputs = { "abc@yahoo.com,", "abc-100@yahoo.com,", "abc.100@yahoo.com","abc111@abc.com,","abc-100@abc.net,","abc.100@abc.com.au","abc@1.com,","abc@gmai.com.com","abc+100@gmail.com" };
             ValidateAllMail(inputs, pattern);
         }
         public static void ValidatePattern(string inputs, string pattern)
